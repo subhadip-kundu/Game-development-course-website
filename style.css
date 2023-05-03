@@ -1,0 +1,580 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+}
+
+header {
+    width: 100%;
+    height: 38rem;
+    background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+    padding: 1.6rem 5rem;
+}
+
+/* Navigation top section */
+
+.nav-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.organization-name h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nav-top {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.organization-name h1 span {
+    font-size: 1.8rem;
+    color: #6d3636;
+}
+
+.lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.lists li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.enroll-btn {
+    background-color: #023047;
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    margin-top: -.7rem;
+    color: #fff;
+    transition: background-color .8s ease;
+    transition: color .8s ease;
+    margin: 2px;
+}
+
+/* Navigation bottom section */
+
+.nav-content,
+.nav-bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left h1 {
+    font-size: 3.2rem;
+    font-family: "Poppins";
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.left h3 {
+    font-size: 1rem;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #ffffff;
+    margin: 20px 20px 20px 0;
+}
+
+.left button,
+.btn button {
+    width: 8.5rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .94rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    background-color: orange;
+    border: none;
+    border-radius: .2rem;
+}
+
+.right {
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    height: 100%;
+}
+
+.middle {
+    width: 35%;
+    height: 31rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    color: #023047;
+}
+
+.middle h1 {
+    font-size: 2rem;
+    font-family: "Raleway";
+}
+
+.middle h3 {
+    font-family: "Raleway";
+    font-size: 1rem;
+}
+
+.student-enrolled,
+.student-rating {
+    background-color: aliceblue;
+    width: 13rem;
+    height: 5.5rem;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 70%; */
+}
+
+.student-enrolled {
+    margin-left: 5rem;
+}
+
+.rating {
+
+    display: flex;
+    gap: 5px;
+}
+
+[alt="Star"] {
+    width: 2rem;
+}
+
+.student-image {
+    width: 65%;
+    height: 100%;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-image img {
+    width: 75%;
+    height: 94%;
+}
+
+
+/* Navigation end */
+
+
+/* Hero section start */
+
+
+/* Hero left part start*/
+
+.hero-section {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40rem;
+}
+
+.hero-left {
+    width: 45%;
+    background-image: url(./Assets/toppng.com-color-splash-blue-400x304.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card {
+    margin: 2.5rem;
+    width: 30rem;
+    height: 13rem;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem .5rem;
+}
+
+
+.feedback {
+    padding: 1.5rem 2rem;
+    height: 6rem;
+    background: #6F7DFB;
+    border-radius: 1.5rem .5rem 0 0;
+    color: #FFFFFF;
+    font-family: "Poppins";
+}
+
+.top-gap {
+    margin-top: 5rem;
+}
+
+.dif-color {
+    background-color: rgb(227, 129, 0);
+}
+
+.left-gap {
+    position: relative;
+    left: 3rem;
+}
+
+.user {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Poppins";
+}
+
+.name {
+    color: #033752;
+}
+
+.post {
+    color: #074c23;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.per-image {
+    position: relative;
+    top: -2rem;
+}
+
+/* Hero left part finish*/
+
+/* Hero right part started*/
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 54%;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline h1 {
+    font-size: 3.6rem;
+    font-family: "Poppins";
+    color: #033752;
+    margin-bottom: 1rem;
+}
+
+.slogan h3 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 200%;
+    color: #074c23;
+}
+
+.btn button {
+    padding-left: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+/* Hero right part end*/
+
+/* Courses section start */
+
+.course-section {
+    height: 45rem;
+    padding-top: 5rem;
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-header h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.8rem;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+
+.course-header {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 3.4rem;
+}
+
+.course-header::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 5rem;
+    background-color: red;
+    left: .5rem;
+    bottom: 0;
+    transition: all 0.5s ease-out;
+}
+
+.game-demo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 1.5rem;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin: 2.6rem;
+    width: 35rem;
+    align-items: center;
+}
+
+.game-description {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway";
+    font-size: 78%;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.game-pic img{
+    cursor: pointer;
+}
+
+.abailable-time {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/* Courses section end */
+
+
+/* Availability section start */
+
+.Availability-section {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.get-app-heading {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #023047;
+    margin-bottom: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+.get-app-slogan {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    color: #023047;
+    margin-bottom: 1.3rem;
+}
+
+.store {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.app-store ,.play-store{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 6.5rem;
+    margin: 2rem;
+    background: #000000;
+    margin-bottom: 2rem;
+    border-radius: 5px 0;
+    cursor: pointer;
+}
+
+.Store-name{
+    display: flex;
+    justify-content: center;align-items: center;
+    gap: 2rem;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+}
+
+/* Availability section end */
+
+
+/* Footer section start */
+
+.footer-area{
+    height: 26rem;
+    background-color: #070917;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+.first,.second,.third{
+    height: 80%;
+    width: 26%;
+    padding-top: 3rem;
+}
+.first ul,.second ul,.third ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.first ul a,.second ul a,.third ul a{
+    color: #fff;
+    font-family: 'Poppins';
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+#diff{
+    color: #DA722C;
+    margin-left: -2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.email-reciver{
+    font-family: 'Poppins';
+    height: 2.4rem;
+    width: 19rem;
+    display: flex;
+    align-items: center;justify-content: center;
+    margin: 1rem 0 0 0rem;
+    border: 2px solid red;
+    padding:0 .3rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.email-reciver button , .email-reciver input{
+    border: none;
+    outline: none;
+    height: 80%;
+    text-transform: capitalize;
+    
+}
+.email-reciver input{
+    width: 65%;
+    font-weight: 600;
+}
+.email-reciver button {
+    width: 6rem;
+    height: 75%;
+    background-color: #f40000;
+    border-radius: .5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+#diff::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 30%;
+    background-color: #d9faa0;
+    left: .5rem;
+    bottom: 0;
+    transition: all 0.5s ease-out;
+}
+
+
+
+.displaimer{
+    color: #fff;
+    padding-bottom:3rem ;
+    font-size: .9rem;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+/* Footer section end */
+
+
+/* Hover section */
+
+.course-header:hover::after {
+    width: calc(100% - .7rem);
+    background-color: #8a007e;
+}
+
+#diff:hover::after {
+    width: calc(100% - .7rem);
+    background-color: #DA722C;
+}
+
+.enroll-btn:hover {
+    background-color: #fbfff5;
+    border: 2px solid #033752;
+    color: #033752;
+    margin: 0px;
+}
+
+.left button:hover, .btn button:hover{
+    color: #023030;
+    background-color: #ef993d;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
