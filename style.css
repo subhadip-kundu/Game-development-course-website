@@ -14,12 +14,15 @@ header {
     background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
     padding: 1.6rem 5rem;
 }
-
+a{
+    text-decoration: none;
+}
 /* Navigation top section */
 
 .nav-area {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .organization-name h1 {
@@ -84,7 +87,7 @@ header {
 }
 
 .left {
-    max-width: 40%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 
@@ -188,6 +191,56 @@ header {
     width: 24.8rem;
     height: 94%;
 }
+
+.ham{
+    font-size: 1.5rem;
+    color: #fff;
+    display: none;
+    position: absolute;
+    z-index: 6;
+    top: 2.5rem;
+    right: 4rem;
+
+}
+
+.after-ham{
+    width: 100vw;
+    position: absolute;
+    height: 20rem;
+    z-index: 1;
+    border-top: 2px solid red;
+    margin-left: -3rem;
+    background-color: #023030;
+    align-items: center;justify-content: center;
+    display: flex;
+    display: none;
+    top: 4rem;
+}
+
+.after-ham-list{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 1.7rem;
+    text-align: center;background-color: #023030;
+    font-family: "poppins";
+    font-weight: 500;
+    transition: all 1s ease;
+}
+
+
+.after-ham-list li a{
+    color: #fff;
+    display: inline-block;
+    width: fit-content;
+}
+
+.active{
+    display: block;
+}
+
 
 
 /* Navigation end */
@@ -577,4 +630,8 @@ header {
     border: none;
     font-weight: 500;
     cursor: pointer;
+}
+
+.after-ham-list li a:hover{
+    border-bottom: 2px solid #6F7DFB;
 }
